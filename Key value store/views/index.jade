@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  h1 Key Value store
+  p Welcome to our Key value store assignment
+
+  // Wrapper
+  #wrapper
+
+    // USER INFO
+    #userInfo
+      h2 User Info
+      p
+        strong FIRST:
+        |  <span id='userInfoName'></span>
+        br
+        strong SECOND:
+        |  <span id='userInfoAge'></span>
+        br
+        strong THRID:
+        |  <span id='userInfoGender'></span>
+        br
+        strong FOURTH:
+        |  <span id='userInfoLocation'></span>
+    // /USER INFO
+
+    // USER LIST
+    h2 Key List
+    #userList
+      table
+        thead
+          th Key
+          th Delete?
+        tbody
+    // /USER LIST
+
+    // ADD USER
+    h2 Add Pair
+    #addUser
+      fieldset
+        input#inputUserName(type='text', placeholder='Key')
+        br
+        br
+        br
+        input#inputUserFullname(type='text', placeholder='First')
+        input#inputUserAge(type='text', placeholder='Second')
+        br
+        input#inputUserLocation(type='text', placeholder='third')
+        input#inputUserGender(type='text', placeholder='Fourth')
+        br
+        button#btnAddUser Add User
+    // /ADD USER
+
+  // /WRAPPER
